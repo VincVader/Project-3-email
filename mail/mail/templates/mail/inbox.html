@@ -13,10 +13,15 @@
 
     <div id="emails-view">
     </div>
+    <div id="email-view">
+    </div>
+        
+        
 
     <div id="compose-view">
         <h3>New Email</h3>
-        <form id="compose-form">
+        <form id="compose-form" method="POST">
+            {%csrf_token%}
             <div class="form-group">
                 From: <input disabled class="form-control" value="{{ request.user.email }}">
             </div>
@@ -27,7 +32,7 @@
                 <input class="form-control" id="compose-subject" placeholder="Subject">
             </div>
             <textarea class="form-control" id="compose-body" placeholder="Body"></textarea>
-            <input type="submit" class="btn btn-primary"/>
+            <input type="submit" id="compose-submit" class="btn btn-primary"/>
         </form>
     </div>
 {% endblock %}

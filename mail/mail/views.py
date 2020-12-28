@@ -64,7 +64,7 @@ def compose(request):
             body=body,
             read=user == request.user
         )
-        email.save()
+        email.save()        
         for recipient in recipients:
             email.recipients.add(recipient)
         email.save()

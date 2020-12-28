@@ -1,3 +1,7 @@
 textarea {
     min-height: 400px;
 }
+
+.bg-grey {
+    background: rgb(202, 202, 202);
+}
