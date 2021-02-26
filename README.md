@@ -78,7 +78,7 @@ If user clicks on **unread email** that **email** becomes read and now has grey 
 On **email** page user can click on _**reply**_ button, doing so user will be presented with a **compose** form prefilled with the:
 * **recipient field** set to whoever sent the original email.
 * **subject line** With the **"Re: "**. If the subject line alreay begins with **"Re: "** it will not be added again.
-* **body of the email** with a line: **"On Jan 1 2021, 12:00 AM name@example.com wrote: " 
+* **body of the email** with a line: **"On Jan 1 2021, 12:00 AM ``name@example.com`` wrote: "** 
 
 ![reply to email](/readmedia/reply-to-email.gif)
 
