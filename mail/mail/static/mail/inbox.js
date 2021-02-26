@@ -1,4 +1,4 @@
-// Use buttons to toggle between views
+
 
 const inbox = document.querySelector('#inbox');
 const sent = document.querySelector('#sent');
@@ -24,13 +24,11 @@ compose.addEventListener('click', () => compose_email('', '', ''));
 load_mailbox('inbox')
 
 function load_mailbox(mailbox) {
-	// Show the mailbox and hide other views
-
 
 	emailsView.style.display = 'block';
 	emailView.style.display = 'none';
 	composeView.style.display = 'none';
-	// Show the mailbox name
+	
 	emailsView.innerHTML = '';
 	const h3 = document.createElement('h3');
 	emailsView.append(h3);
@@ -70,7 +68,7 @@ function load_mailbox(mailbox) {
 				});
 
 			};
-			// ... do something else with emails ...
+			
 		});
 
 
@@ -160,11 +158,11 @@ function view_email(id) {
 
 function compose_email(recipients, subject, body) {
 
-	// Show compose view and hide other views
+	
 	emailsView.style.display = 'none';
 	emailView.style.display = 'none';
 	composeView.style.display = 'block';
-	// Clear out composition fields
+	
 	composeRecipients.value = recipients;
 	composeSubject.value = subject;
 	composeBody.value = body;
