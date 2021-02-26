@@ -28,9 +28,11 @@ Singe-page-app email that makes API calls to send and receive emails
 
 ### 1.1 Inbox:
 
-All emails that user received are rendered on this page.
+On first visit user will see this page.
 
-Emails vary in color:
+All **Emails** that user received are rendered on this page.
+
+**Emails** vary in color:
 
 * *Grey* - read emails.
 * *White with blue border* - unread emails.
@@ -39,22 +41,28 @@ Emails vary in color:
 
 ### 1.2 Sent:
 
-All emails that user have sent are rendered on this page.
+User can click on _**Sent**_ link in the navbar and that renders content of **sent** page
+
+All emails that user have **sent** are rendered on this page.
 
 ![sent emails](/readmedia/sent.png)
 
 ### 1.3 Archived:
 
-All emails that user have archived are rendered on this page.
+User can click on _**Archived**_ link in the navbar and that renders content of **archive** page
+
+All emails that user have **archived** are rendered on this page.
 
 
 ![archived emails](/readmedia/archived.png)
 
 ## 2. Compose an email:
 
-image description
+User can click on _**Compose**_ link in the navbar and that renders content of **compose** page
 
-![alt text](/readmedia/default.png)
+On **compose** page user presented with a form by filling out which he can send an email:
+
+![compose an email](/readmedia/email-composing.gif)
 
 ## 3. View Email:
 
