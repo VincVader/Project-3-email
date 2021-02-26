@@ -14,13 +14,14 @@ Singe-page-app email that makes API calls to send and receive emails
 ### Readme Navigation
 
 1. [Mailbox](#1-mailbox)
-   - [Inbox](#11-inbox)
-   - [Sent](#12-sent)
-   - [Archived](#13-archived)
+    - [Inbox](#11-inbox)
+    - [Sent](#12-sent)
+    - [Archived](#13-archived)
 2. [Compose an email](#2-compose-an-email)
 3. [View Email](#3-view-email)
-4. [Name](#4-header)
-5. [Future improvements](#6-future-improvements)
+    - [Reply to email](#31-reply-to-email)
+    - [Archive an email](#32-archive-an-email)
+4. [Future improvements](#4-future-improvements)
 
 [My contacts](#my-contacts)
 
@@ -30,7 +31,7 @@ Singe-page-app email that makes API calls to send and receive emails
 
 On first visit user will see this page.
 
-All **Emails** that user received are rendered on this page.
+All **Emails** that user received are displayed on this page.
 
 **Emails** vary in color:
 
@@ -43,7 +44,7 @@ All **Emails** that user received are rendered on this page.
 
 User can click on _**Sent**_ link in the navbar and that renders content of **sent** page
 
-All emails that user have **sent** are rendered on this page.
+All emails **sent** by the user are displayed on this page.
 
 ![sent emails](/readmedia/sent.png)
 
@@ -51,7 +52,7 @@ All emails that user have **sent** are rendered on this page.
 
 User can click on _**Archived**_ link in the navbar and that renders content of **archive** page
 
-All emails that user have **archived** are rendered on this page.
+All emails that user have **archived** are displayed on this page.
 
 
 ![archived emails](/readmedia/archived.png)
@@ -66,21 +67,27 @@ On **compose** page user presented with a form by filling out which he can send 
 
 ## 3. View Email:
 
-image description
+User can click on any **email** and that renders content of that **email**.
 
-![alt text](/readmedia/default.png)
+If user clicks on **unread email** that **email** becomes read and now has grey background.
+
+![clicking on email](/readmedia/clicking-on-email.gif)
 
 ### 3.1 Reply to email:
 
-image description
+On **email** page user can click on _**reply**_ button, doing so user will be presented with a **compose** form prefilled with the:
+* **recipient field** set to whoever sent the original email.
+* **subject line** With the **"Re: "**. If the subject line alreay begins with **"Re: "** it will not be added again.
+* **body of the email** with a line: **"On Jan 1 2021, 12:00 AM name@example.com wrote: " 
 
-![alt text](/readmedia/default.png)
+![reply to email](/readmedia/reply-to-email.gif)
+
 
 ### 3.2 Archive an email:
 
 image description
 
-![alt text](/readmedia/default.png)
+![email archivation](/readmedia/archive-an-email.gif)
 
 ## 4. Future improvements:
 
